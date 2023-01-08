@@ -12,6 +12,7 @@ RUN pip3 install --upgrade --no-deps --force-reinstall git+https://github.com/op
 
 RUN mkdir -p /var/www
 COPY ./requirements.txt /var/www
+RUN pip3 --no-cache-dir torch==1.13.1
 RUN pip3 install -r /var/www/requirements.txt
 
 COPY ./gunicorn.py /var/www
