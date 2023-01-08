@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% block main %}
+<script>
+
+// youtube動画のurlの場合
+
+// 文字列に
+// www.youtube.com/watch?v=
+
+  function loading() {
+    document.querySelector('#loading-wrapper').innerHTML = 
+    `
+    <div class="spinner-box">
+      <div class="pulse-container">  
+        <div class="pulse-bubble pulse-bubble-1"></div>
+        <div class="pulse-bubble pulse-bubble-2"></div>
+        <div class="pulse-bubble pulse-bubble-3"></div>
+      </div>
+    </div>
+    `
+    ;  }
+
+</script>
+<main class="top-main">
+<div class="index-url-input-container">
+  <div class="index-url-input-wrapper">
+    <form method="POST" needs-validation">
+        <div class="index-form-button-wrapper d-flex p-2 justify-content-center">
+          <div class="form-group w-100">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="https://www.youtube.com/watch?v=AyOnug-3OKM&ab_channel=OpenAI" name="url" required>
+          </div>
+          <div class="index-serch-button-wrapper align-middle">
+            <button type="submit" class="btn btn-primary index-serch-button" onclick="loading()">Convert</button>
+          </div>
+        </div>
+        <p class="index_input_error">
+          {{ error_msg }}
+        </p>
+
+    </form>
+  </div>
+</div>
+
+<!-- LOADING DOTS... -->
+<div id="loading-wrapper">
+
+</div>
+
+  <div class="index-output-container">
+    <div class="index-output-title">
+      <div class="index-output-title-left">
+        <strong>英語</strong>
+      </div>
+      <div class="index-output-title-right">
+        <div class="index-translate-icon" style="display: flex;">
+          <svg class="icon--UyQC8 svgIcon--SYoRT" focusable="false" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 7L20 7M20 7L16 3M20 7L16 11M16 17L4 17M4 17L8 21M4 17L8 13">
+  
+            </path>
+          </svg>
+        </div>
+        <strong>日本語</strong>
+      </div>
+    </div>
+    <div class="index-output-wrapper">
+      <textarea class="index-output-textarea-right" rows="4" cols="50">
+        {{ transcripted_txt }}
+      </textarea>
+      <textarea class="index-output-textarea-left" rows="4" cols="50">
+        {{ translated_txt }}
+      </textarea>
+    </div>
+  </div>
+</main>
+{% endblock %}

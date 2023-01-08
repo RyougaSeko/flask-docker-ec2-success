@@ -1,0 +1,570 @@
+body {
+    background-color: #F7F7F7 !important;
+}
+
+.top-main {
+    padding: 30px 30px;
+}
+
+.nav-logo {
+    width: 40px;
+    height: 35px;
+}
+
+.index-url-input-container {
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #dae1e8;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+}
+
+.index-url-input-wrapper {
+    margin: 10px 10px;
+}
+
+.index-serch-button {
+    margin: auto;
+}
+
+.index-output-wrapper {
+    display: flex;
+    min-height: clamp(250px,50vh,557px);
+}
+
+.index-output-sidecontainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 32px);
+    line-height: 1.5;
+    position: relative;
+}
+
+.index-output-textarea-right {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    vertical-align: top;
+    text-align: start;
+    font-size: 100%;
+    position: relative;
+    resize: none;
+    /* border-top-left-radius: 10px 10px; */
+    border-bottom-left-radius: 10px 10px;
+
+    width: 50%;
+    background-color: white;
+    border: 1px solid #dae1e8;
+    overflow: auto;
+
+}
+
+.index-translate-icon {
+    background-color: white;
+}
+
+.index-output-textarea-left {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    vertical-align: top;
+    text-align: start;
+    font-size: 100%;
+    position: relative;
+    resize: none;
+    /* border-top-right-radius: 10px 10px; */
+    border-bottom-right-radius: 10px 10px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid #dae1e8;
+    overflow: auto;
+}
+
+.index-output-container {
+    margin-top: 30px;
+}
+
+.index-output-title {
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+}
+
+.index-output-title strong{
+    margin: auto 0;
+    margin-left: 10px;
+}
+
+.index-output-title-left{
+    width: 50%;
+    background-color: white;
+    border: 1px solid #dae1e8;
+    border-right: 0px white;
+    margin-bottom: 0px;
+    border-top-left-radius: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index-output-title-right{
+    width: 50%;
+    background-color: white;
+    border: 1px solid #dae1e8;
+    border-left: 0px white;
+    margin-bottom: 0px;    border-top-right-radius: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.index-translate-icon {
+    width: 25px;
+    margin-left: -14px;
+}
+
+.dl_headerMenu__proButton {
+    border: none;
+    color: #fff;
+    padding: 0.5em 1em;
+    font-weight: 400;
+    transition: background-color 100ms ease-out;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 1em;
+
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #006494;
+}
+
+@media (max-width: 840px) {
+    .index-output-sidecontainer {
+        width: calc(50% - 20px);
+    }
+
+    .dl_headerMenu__proButton {
+        width: 100px;
+        font-size: 10px;
+    }
+
+}
+
+.index_input_error {
+    color: red;
+    margin-left: 5px;
+}
+
+
+/* ここからsignup画面 */
+
+.signup-form-container {
+    /* margin: auto;
+    width: 80%;
+    background-color: white;
+    border: 1px solid #dae1e8;
+    border-radius: 10px; */
+    background-color: #fff;
+    border-radius: 5px;
+    border-top: 5px solid #0f2b46;
+    box-shadow: 0 32px 40px rgb(0 0 0 / 8%);
+    flex-basis: 60%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 80px;
+    margin-right: 0;
+    min-height: 300px;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.step1-module--formHeadlineBig--CtMaG {
+    font-family: Montserrat,sans-serif;
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.step1-module--registerInfo--9PpfW {
+    color: #1b1e25;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.label-module--labelWrapper--evlth .label-module--label--KZcL- {
+    font-family: Montserrat,sans-serif;
+    font-size: .875em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.label-module--labelWrapper--evlth .label-module--label--KZcL- {
+    font-family: Montserrat,sans-serif;
+    font-size: .875em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.signup-button-wrapper {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sigup-input-password-wrapper {
+    display: flex;
+}
+
+.sigup-input-password-wrapper i {
+    padding-top: 5px;
+}
+
+/* ここまでsignup画面 */
+
+
+/* ここからsignup画面 */
+
+@media only screen and (min-width: 840px) {
+    .container-module--container--IDKSF.container-module--withResponsivePadding--eLkQK {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+.proHeader-module--headerWrapper--NxwFu .proHeader-module--header--0Ipn- .proHeader-module--slogan--HOnOy {
+    align-items: center!important;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px!important;
+    position: relative;
+}
+
+.proHeader-module--headerWrapper--NxwFu .proHeader-module--header--0Ipn- .proHeader-module--slogan--HOnOy h1 {
+    box-sizing: border-box;
+    font-family: Montserrat,sans-serif;
+    font-size: 2.5em;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.button-module--button--T1jbp.button-module--color_secondary--2NbnW {
+    background-color: #f46f52;
+    border: 1px solid #f46f52;
+    color: #f46f52;
+}
+
+.button-module--button--T1jbp {
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Open Sans,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding: 0.75em 1.5em;
+    position: relative;
+    transition: .15s;
+}
+
+.top-grid-card-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 32px 40px rgb(0 0 0 / 8%);
+    flex-basis: 60%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 80px;
+    margin-right: 0;
+    min-height: 300px;
+    padding: 20px;
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.top-grid-card-container {
+    display: flex;
+    flex-wrap: wrap; /* 折返し指定 */
+}
+
+.top-description-card-container {
+	width: calc(50%); /* gap padding分を引く */
+}
+
+@media (max-width: 840px) {
+    .top-description-card-container {
+        width: calc(100%); /* gap padding分を引く */
+    }    
+}
+
+@media only screen and (min-width: 1200px) {
+    .top-description-card-container {
+        width: calc(25%); /* gap padding分を引く */
+    }    
+}
+
+.top-description-card-icon {
+    display: flex;
+}
+
+.top-description-card-icon img {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.top-description-card-title h3 {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.top-description-card-text p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 80%;
+    margin: auto;
+}
+
+.top-description-card-container {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.powered-by-container {
+    margin-top: 100px;
+}
+
+.powered-by-container p {
+    font-size: xx-large;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.top-powered-by {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    height: 250px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 100px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.top-powered-by img {
+    width: 80%;
+    display:block;
+}
+
+.top-powered-by-left {
+    width: 40%;
+    max-width: 340px;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.top-powered-by-right {
+    width: 40%;
+    max-width: 340px;
+    min-width: 130px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+
+    .top-powered-by {
+        height: 170px;
+    }
+
+    .top-powered-by-left {
+        width: 100%;
+    }
+    
+    .top-powered-by-right {
+        width: 100%;
+    }
+
+    .powered-by-container p {
+        font-size: medium;
+    }
+}
+
+
+.top-input-form {
+    width: 80% !important;
+    margin: auto;
+}
+
+/* ここまでtop画面 */
+
+
+/* ここからfooter */
+
+
+/* ここまでfooter */
+
+
+@keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(359deg);
+    }
+  }
+  
+  @keyframes spin3D {
+    from {
+      transform: rotate3d(.5,.5,.5, 360deg);
+    }
+    to{
+      transform: rotate3d(0deg);
+    }
+  }
+  
+  @keyframes configure-clockwise {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes configure-xclockwise {
+    0% {
+      transform: rotate(45deg);
+    }
+    25% {
+      transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(-135deg);
+    }
+    75% {
+      transform: rotate(-225deg);
+    }
+    100% {
+      transform: rotate(-315deg);
+    }
+  }
+  
+  @keyframes pulse {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: .25;
+      transform: scale(.75);
+    }
+  }
+  
+  /* GRID STYLING */
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .spinner-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+  }
+  
+  /* PULSE BUBBLES */
+  
+  .pulse-container {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pulse-bubble {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #006394;
+  }
+  
+  .pulse-bubble-1 {
+      animation: pulse .4s ease 0s infinite alternate;
+  }
+  .pulse-bubble-2 {
+      animation: pulse .4s ease .2s infinite alternate;
+  }
+  .pulse-bubble-3 {
+      animation: pulse .4s ease .4s infinite alternate;
+  }
+  
+  .w1 {
+    transform: rotate3D(1, 1, 1, 90deg);
+  }
+  
+  .w2 {
+    transform: rotate3D(1, 2, .5, 90deg);
+  }
+  
+  .w3 {
+    transform: rotate3D(.5, 1, 2, 90deg);
+  }
+
+  

@@ -1,0 +1,66 @@
+version: '3'
+
+services:
+    web:
+        build: 
+          context: ./web
+        ports:
+          - "80:80"
+          - "443:443"
+        volumes:
+          - ./web/public:/etc/nginx/public
+          - ../ssl/certs/:/etc/pki/tls/certs/
+          - ../ssl/private/:/etc/pki/tls/private/
+          - ./gunicorn_socket:/tmp/gunicorn_socket
+        depends_on:
+          - app
+        container_name: web
+        restart: always
+        networks:
+          - network
+
+    app:
+        build: 
+          context: ./app
+        volumes:
+          - ./app:/var/www/
+          - ./gunicorn_socket:/tmp/gunicorn_socket
+        # depends_on:
+        #   - db
+        container_name: app
+        ports:
+            - 9876:9876
+        networks:
+          - network
+
+volumes:
+    db_data: {}
+
+networks:
+    network:
+      driver: bridge
+# version: '3'
+
+# services:
+#   flaskapp:
+#     build: ./flaskapp-docker
+#     container_name: flaskapp
+#     ports:
+#       - "0.0.0.0:8000:5000"
+
+#   nginx:
+#       image: nginx:latest
+#       container_name: nginx
+#       ports:
+#         - "80:80"
+#       volumes:
+#         - ./nginx/flaskapp.conf:/etc/nginx/conf.d/default.conf
+#         - ./src:/var/www/html
+#   # nginx:
+#   #   build: ./nginx
+#   #   container_name: nginx
+#   #   environment:
+#   #     - SERVER_NAME=0.0.0.0
+#   #   restart: always
+#   #   ports:
+#   #     - "80:80"
