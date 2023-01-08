@@ -13,9 +13,9 @@ from mutagen.mp3 import MP3
 app = Flask(__name__)
 
 # Add directory into content folder
-# checkDownLoadFolder = os.path.exists("download")
-# if not checkDownLoadFolder:
-#   os.mkdir("download")
+checkDownLoadFolder = os.path.exists("download")
+if not checkDownLoadFolder:
+  os.mkdir("download")
 
 
 @app.route('/', methods=['GET', 'POST'])
