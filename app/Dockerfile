@@ -1,8 +1,9 @@
-FROM python:3.8
+FROM ubuntu:22.04
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN apt update -y
+RUN apt install python3-pip -y
 
 RUN mkdir -p /var/www
 COPY ./requirements.txt /var/www
