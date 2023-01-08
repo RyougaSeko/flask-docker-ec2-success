@@ -22,3 +22,6 @@ proc_name = 'Infrastructure-Practice-Flask'
 # Worker Processes
 workers = 2
 worker_class = 'sync'
+
+timeout = 100
+graceful_timeout = 100

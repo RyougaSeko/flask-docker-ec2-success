@@ -20,4 +20,4 @@ COPY ./app.py /var/www
 
 WORKDIR /var/www
 
-CMD ["gunicorn", "app:app", "--config", "/var/www/gunicorn.py" ]
+CMD ["gunicorn", "app:app", "--config", "/var/www/gunicorn.py", "--timeout", "500"]
